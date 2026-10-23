@@ -4,7 +4,9 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Scaffold
@@ -54,13 +56,12 @@ fun TampilData(
                     }
                     HorizontalDivider(thickness = 1.dp, color = Color.Cyan)
                 }
-                Spacer(modifier = Modifier.heigt(10.dp))
+                Spacer(modifier = Modifier.height(10.dp))
                 Button(
                     modifier = Modifier.fillMaxWidth(),
                     onClick = onBackBtnClick) {
                     Text(text = stringResource(id = R.string.back))
                 }
-                )
             }
         }
     }
